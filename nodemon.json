@@ -1,0 +1,10 @@
+{
+  "verbose": true,
+  "ignore": [
+    ".git",
+    "dist"
+  ],
+  "watch": [
+    "src/**/*.ts"
+  ]
+}

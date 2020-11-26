@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2019",
+    "strict": true,
+    "outDir": "dist"
+  },
+  "include": ["src", ".eslintrc.js"],
+  "exclude": ["node_modules"]
+}
