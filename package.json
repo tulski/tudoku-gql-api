@@ -3,14 +3,11 @@
   "name": "tudoku-graphql-api",
   "version": "1.0.0",
   "description": "",
-  "engines": {
-    "node": ">=8.10.0"
-  },
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "clear": "rimraf dist",
     "build": "tsc -b",
-    "start": "node -r dotenv/config dist/server.js",
+    "start": "node -r dotenv/config dist/index.js",
     "restart": "npm run clear && npm run build && npm run start",
     "dev": "nodemon --exec npm run restart"
   },
@@ -29,9 +26,13 @@
     "typescript": "^4.1.2"
   },
   "dependencies": {
+    "apollo-datasource-rest": "^0.9.5",
     "apollo-server": "^2.19.0",
     "dotenv": "^8.2.0",
     "graphql": "^15.4.0",
     "rimraf": "^2.6.3"
+  },
+  "engines": {
+    "node": ">=8.10.0"
   }
 }

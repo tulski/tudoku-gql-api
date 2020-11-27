@@ -18,6 +18,7 @@ module.exports = {
     "prettier/@typescript-eslint",
   ],
   rules: {
-    "node/no-missing-require": ["error", { tryExtensions: [".ts"] }],
+    "node/no-missing-import": ["error", { tryExtensions: [".ts"] }],
+    "node/no-unsupported-features/es-syntax": 0, // TODO
   },
 };
